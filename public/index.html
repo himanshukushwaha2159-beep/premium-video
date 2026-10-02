@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Content Growth</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,sans-serif;background:#080808;color:#fff}
+.container{max-width:760px;margin:auto;padding:18px}
+.badge{display:inline-block;background:#171717;border:1px solid #333;padding:8px 14px;border-radius:50px;color:#ccc;font-size:13px}
+.hero{padding:28px 5px}
+.hero h1{font-size:38px;line-height:1.1;margin:18px 0}
+.hero h1 span{color:#ffb300}
+.hero p{color:#aaa;font-size:17px}
+.card{background:linear-gradient(145deg,#191919,#0d0d0d);border:1px solid #292929;border-radius:22px;padding:22px;margin:18px 0;box-shadow:0 15px 40px #0008}
+.card h2{font-size:22px;margin-bottom:15px}
+.feature{display:flex;gap:12px;padding:15px 0;border-bottom:1px solid #292929;color:#ddd}
+.check{width:29px;height:29px;min-width:29px;border-radius:50%;background:#252525;display:grid;place-items:center}
+.lock-video{height:210px;border-radius:18px;background:radial-gradient(circle,#333,#111);display:flex;flex-direction:column;align-items:center;justify-content:center;margin-bottom:20px;border:1px solid #333}
+.lock-icon{font-size:45px}
+.lock-video p{color:#888;font-size:14px;margin-top:7px}
+.price{text-align:center;margin:15px 0 20px}
+.old{text-decoration:line-through;color:#777;font-size:18px}
+.new{font-size:38px;font-weight:800}
+.buy{width:100%;padding:18px;border:0;border-radius:14px;background:#ffb300;color:#111;font-size:18px;font-weight:800}
+.secure{text-align:center;color:#777;font-size:12px;margin-top:12px}
+.module{display:flex;align-items:center;gap:14px;padding:17px 0;border-bottom:1px solid #292929}
+.module:last-child{border:0}
+.module-text{flex:1}.module-text b{display:block}.module-text small{color:#777}
+.notice{background:#101010;border:1px solid #282828;border-radius:15px;padding:17px;color:#aaa}
+details{border-bottom:1px solid #292929;padding:17px 0}
+summary{font-weight:bold;cursor:pointer}
+details p{color:#999;margin-top:9px;font-size:14px}
+footer{text-align:center;color:#666;font-size:12px;padding:30px}
+</style>
+</head>
+<body>
+<div class="container">
+
+<div class="hero">
+<div class="badge">🚀 PREMIUM CONTENT</div>
+<h1>Grow Your Content<br><span>Faster & Smarter.</span></h1>
+<p>Practical strategies to understand views, fix common problems and create better content.</p>
+</div>
+
+<div class="card">
+<h2>🎯 इस Video में क्या मिलेगा?</h2>
+<div class="feature"><div class="check">✓</div><span>1K–40K Views पर Growth कैसे लाएँ</span></div>
+<div class="feature"><div class="check">✓</div><span>0 Views Problem को समझना और Solve करना</span></div>
+<div class="feature"><div class="check">✓</div><span>Viral Content Ideas और Practical Strategy</span></div>
+<div class="feature"><div class="check">✓</div><span>Common Mistakes से बचने के तरीके</span></div>
+</div>
+
+<div class="card">
+<h2>🔒 Premium Video</h2>
+<div class="lock-video">
+<div class="lock-icon">🔐</div>
+<strong>Video Locked</strong>
+<p>Payment के बाद पूरा video unlock होगा</p>
+</div>
+<div class="price"><span class="old">₹999</span> <span class="new">₹149</span></div>
+<button class="buy" onclick="openPay()">BUY NOW ₹149 →</button>
+<div class="secure">🔒 Secure Payment • Instant Access</div>
+</div>
+
+<div class="card">
+<h2>📚 Course Content</h2>
+<div class="module">🚀 <div class="module-text"><b>1. Growth Strategy</b><small>Views और growth को समझें</small></div>🔒</div>
+<div class="module">💡 <div class="module-text"><b>2. Viral Content Ideas</b><small>Content ideas और execution</small></div>🔒</div>
+<div class="module">📈 <div class="module-text"><b>3. 0 Views Problem</b><small>Common problems और solutions</small></div>🔒</div>
+</div>
+
+<div class="notice">💎 <b>Lifetime Access</b><br>Payment verify होने के बाद purchased content access मिलेगा।</div>
+
+<div class="card">
+<h2>❓ FAQ</h2>
+<details><summary>Payment के बाद video कब मिलेगा?</summary><p>Payment successfully verify होने के बाद video access unlock किया जाएगा।</p></details>
+<details><summary>क्या दोबारा payment करना पड़ेगा?</summary><p>Purchased content के लिए lifetime access रखा जा सकता है।</p></details>
+<details><summary>क्या mobile से देख सकता हूँ?</summary><p>हाँ, website mobile-friendly है।</p></details>
+</div>
+
+<footer>© 2026 Content Growth • All Rights Reserved</footer>
+</div>
+
+<script>
+function buyNow(){
+alert("₹149 Payment System जल्द connect किया जाएगा.");
+}
+</script>
+
+<div id="paymentBox" style="display:none;position:fixed;inset:0;background:rgba(0,0,0,.82);z-index:99999;align-items:center;justify-content:center;padding:18px">
+<div style="background:white;color:#111;width:100%;max-width:390px;border-radius:22px;padding:22px;text-align:center">
+<button onclick="closePay()" style="float:right;border:0;background:#eee;border-radius:50%;width:32px;height:32px;font-size:20px">×</button>
+<h2 style="margin:10px 0">💳 Pay ₹149</h2>
+<p style="color:#555">QR scan करके ₹149 payment करें</p>
+<img src="/qr.png" style="width:250px;max-width:85%;margin:15px auto;display:block;border-radius:8px">
+<p style="font-size:13px;color:#777">Payment के बाद 6-digit access code डालें</p>
+<input id="accessCode" type="tel" maxlength="6" placeholder="6-Digit Code" style="width:100%;padding:14px;border:1px solid #ccc;border-radius:10px;text-align:center;font-size:20px;letter-spacing:5px">
+<button onclick="unlockVideo()" style="width:100%;margin-top:12px;padding:15px;border:0;border-radius:10px;background:#ffb300;font-size:17px;font-weight:bold">UNLOCK VIDEO</button>
+<div id="codeError" style="color:#d00;margin-top:10px"></div>
+</div>
+</div>
+<script>
+function openPay(){document.getElementById('paymentBox').style.display='flex'}
+function closePay(){document.getElementById('paymentBox').style.display='none'}
+function unlockVideo(){
+let c=document.getElementById('accessCode').value;
+if(c==='959897'){location.href='/video'}else{document.getElementById('codeError').textContent='❌ Invalid access code'}
+}
+</script>
+</body>
+</html>
